@@ -1,12 +1,12 @@
 const hre = require("hardhat");
 
 async function main() {
-    const contract = await hre.ethers.deployContract("Submission");
+    const contract = await hre.ethers.deployContract("Submission", [1]);
 
     await contract.waitForDeployment();
 
     console.log(
-        `deployed to ${contract.target}`
+        `Deployed to ${contract.target}`
     );
 
     const slotNumber = 0;

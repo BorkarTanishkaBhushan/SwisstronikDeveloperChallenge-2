@@ -13,6 +13,11 @@ contract Submission {
     uint256 private  _num;
 
 
+    constructor(uint _startValue) payable{
+        _num = _startValue;
+    }
+
+
     /// @notice Set a new value for the variable
     /// @dev Setter function fo the private variable
     /// @param _newValue it is the new value for the private variable

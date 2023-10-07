@@ -9,6 +9,10 @@ module.exports = {
     mumbai: {
       url: process.env.ALCHEMY_URL,
       accounts: [process.env.ACCOUNT_PRIVATE_KEY],
-    }
+    },
+    swisstronik: {
+      url: process.env.SWISSTRONIK_URL,
+      accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+    },
   },
 };
